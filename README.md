@@ -3,9 +3,9 @@ FAQs in Slack channel of Udacity's Private and Secure Scholarship Challenge 2019
 
 ![Secure and Private AI Free Course from Udacity and Facebook](https://i1.wp.com/blog.udacity.com/wp-content/uploads/2019/05/Social2-FB.png?resize=768%2C403&ssl=1)
 ## Content
-* [About the course](About_the_course.md)
-* [Lesson 2 - Deep Learning with PyTorch](Lesson_2.md)
-* [Lesson 3 - Introducing Differential Privacy](Lesson_3.md)
+* [About the course](FAQs/About_the_course.md)
+* [Lesson 2 - Deep Learning with PyTorch](FAQs/Lesson_2.md)
+* [Lesson 3 - Introducing Differential Privacy](FAQs/Lesson_3.md)
 * [Lesson 4 - Evaluating the Privacy of a Function](Lesson_4.md)
 * [Lesson 5 - Introducing Local abd Global Differential Privacy](Lesson_5.md)
 * [Lesson 6 - Differential Privacy for Deep Learning](Lesson_6.md)
