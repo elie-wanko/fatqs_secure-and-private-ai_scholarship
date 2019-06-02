@@ -19,6 +19,14 @@ All the channels of our Slack community are constantly buzzing with great questi
 We hope to make this repo useful not only for the students of " Secure and Private AI Scholarship Challenge with Facebook" but also for future students of [Secure and Private AI course](https://www.udacity.com/course/secure-and-private-ai--ud185) by Facebook AI on Udacity.
 
 ## How to contribute contribute?
+Simply format your contribution as follows:
+> **Q#: Question ?**
+>
+> Answer
+
+For formatting content in Markdown here the guide [Mastering Markdown](https://guides.github.com/features/mastering-markdown/) to styling all forms of writing on the GitHub platform.
+
+
 We would love to have contributions from you and welcome all your suggestions to improve this repo. Please do not hesitate to make a pull request if you feel it can add any value to the repo, every bit of effort matters. If you have any queries or suggestions, you can DM me at my Slack id <@Varez.W> or open a new github issue. Looking forward to contributions from you.
 
 Thanks.
