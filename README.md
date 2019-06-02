@@ -16,20 +16,25 @@ FAQs in Slack channel of Udacity's Private and Secure Scholarship Challenge 2019
 ## Why we have created this repo?
 All the channels of our Slack community are constantly buzzing with great questions and amazing answers. These answers can be in the form of lucid explanations from our peers or references to some awesome resources. But due to a limitation in free plan of Slack, we can search only upto the last 10K messages. Due to this limitation, we are loosing the efforts of our peers and all the amazing resources. To prevent this loss of invaluable resources, we have created this repo where we would be regularly be adding frequently asked questions and the possible solutions shared by our peers in the Slack channels. Also, this repo would help future students of this course as they would find solutions to most of the common problems in a single repo.
 
-We hope to make this repo useful not only for the students of " Secure and Private AI Scholarship Challenge with Facebook" but also for future students of [Secure and Private AI course](https://www.udacity.com/course/secure-and-private-ai--ud185) by Facebook AI on Udacity.
+We hope to make this repo useful not only for the students of "Secure and Private AI Scholarship Challenge with Facebook" but also for future students of [Secure and Private AI course](https://www.udacity.com/course/secure-and-private-ai--ud185) by Facebook AI on Udacity.
 
-## How to contribute contribute?
-Simply format your contribution as follows:
+## Contribution guidelines?
+Please ensure your pull request adheres to the following guidelines:
+
+- Search previous suggestions before making a new one, as yours may be a duplicate.
+- Make an individual pull request for each suggestion.
+- Keep descriptions short and simple, but descriptive (images and references are appreciated).
+- Start the description with a capital and end with a full stop/period.
+- Check your spelling and grammar.
+- Make sure your text editor is set to remove trailing whitespace.
+- Format your contribution as follows:
 > **Q#: Question ?**
 >
 > Answer
 
-For formatting content in Markdown here the guide [Mastering Markdown](https://guides.github.com/features/mastering-markdown/) to styling all forms of writing on the GitHub platform.
+Thank you for your suggestions!
 
-
-We would love to have contributions from you and welcome all your suggestions to improve this repo. Please do not hesitate to make a pull request if you feel it can add any value to the repo, every bit of effort matters. If you have any queries or suggestions, you can DM me at my Slack id <@Varez.W> or open a new github issue. Looking forward to contributions from you.
-
-Thanks.
+For formatting in Markdown, here is the guide [Mastering Markdown](https://guides.github.com/features/mastering-markdown/) for styling all forms of writing and images on the GitHub platform. We would love to have contributions from you and welcome all your suggestions to improve this repo. Please do not hesitate to make a pull request if you feel it can add any value to the repo, every bit of effort matters. If you have any **queries or suggestions**, you can DM me at my Slack id <@Varez.W> or open a new github issue. Looking forward to contributions from you.
 
 
 ## Resources
