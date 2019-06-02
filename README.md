@@ -30,7 +30,7 @@ Please ensure your pull request adheres to the following guidelines:
 - Format your contribution as follows:
 > **Q#: Question ?**
 >
-> Answer
+> Answer.
 
 Thank you for your suggestions!
 
