@@ -4,13 +4,13 @@ FAQs in Slack channel of Udacity's Private and Secure Scholarship Challenge 2019
 ![Secure and Private AI Free Course from Udacity and Facebook](https://i1.wp.com/blog.udacity.com/wp-content/uploads/2019/05/Social2-FB.png?resize=768%2C403&ssl=1)
 ## Content
 * [About the course](About_the_course.md)
-* [Lesson 2 - Deep Learning with PyTorch](lesson2.md)
-* [Lesson 3 - Introducing Differential Privacy](lesson3.md)
-* [Lesson 4 - Evaluating the Privacy of a Function](lesson4.md)
-* [Lesson 5 - Introducing Local abd Global Differential Privacy](lesson5.md)
-* [Lesson 6 - Differential Privacy for Deep Learning](lesson6.md)
-* [Lesson 7 - Federated Learning](lesson7.md)
-* [Lesson 8 - Securing Federated Learning](lesson8.md)
+* [Lesson 2 - Deep Learning with PyTorch](Lesson_2.md)
+* [Lesson 3 - Introducing Differential Privacy](Lesson_3.md)
+* [Lesson 4 - Evaluating the Privacy of a Function](Lesson_4.md)
+* [Lesson 5 - Introducing Local abd Global Differential Privacy](Lesson_5.md)
+* [Lesson 6 - Differential Privacy for Deep Learning](Lesson_6.md)
+* [Lesson 7 - Federated Learning](Lesson_7.md)
+* [Lesson 8 - Securing Federated Learning](Lesson_8.md)
 * [Miscellaneous](Miscellaneous.md)
 
 ## Why we have created this repo?
@@ -27,4 +27,4 @@ Thanks.
 ## Resources
 1. [FAQs 2018/19 PyTorch Scholarship challenge](https://github.com/ishgirwan/faqs_pytorch_scholarship).
 2. [Pytorch Udacity resource airtable](https://airtable.com/shrwVC7gPOuTJkxW0/tblUf4zxlIMLjwrbv?blocks=hide).
-3. [Private and Secure AI resource airtable](https://airtable.com/shrnw72B7jTxkb6IB/tblmTxH5ToKfHAqkO/viw6ngRCOjK9dwc5C?blocks=hide) You can contribute by submitting you resource through this [link](https://airtable.com/shrohsUEV89f5zZge)
+3. [Private and Secure AI resource airtable](https://airtable.com/shrnw72B7jTxkb6IB/tblmTxH5ToKfHAqkO/viw6ngRCOjK9dwc5C?blocks=hide) You can contribute by submitting you resource through this [link](https://airtable.com/shrohsUEV89f5zZge).
