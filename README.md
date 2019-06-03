@@ -1,5 +1,5 @@
-# FAQs - Private and Secure scholarship by Facebook AI
-FAQs in Slack channel of Udacity's Private and Secure Scholarship Challenge 2019.
+# FATQs - Private and Secure scholarship by Facebook AI
+Frequently Asked Technical Questions in Slack channel of Udacity's Private and Secure Scholarship Challenge 2019.
 
 ![Secure and Private AI Free Course from Udacity and Facebook](https://i1.wp.com/blog.udacity.com/wp-content/uploads/2019/05/Social2-FB.png?resize=768%2C403&ssl=1)
 ## Content
