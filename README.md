@@ -3,15 +3,15 @@
 
 ![Secure and Private AI Free Course from Udacity and Facebook](https://i1.wp.com/blog.udacity.com/wp-content/uploads/2019/05/Social2-FB.png?resize=768%2C403&ssl=1)
 ## Content
-* [About the course](FAQs/About_the_course.md)
-* [Lesson 2 - Deep Learning with PyTorch](FAQs/Lesson_2.md)
-* [Lesson 3 - Introducing Differential Privacy](FAQs/Lesson_3.md)
-* [Lesson 4 - Evaluating the Privacy of a Function](FAQs/Lesson_4.md)
-* [Lesson 5 - Introducing Local abd Global Differential Privacy](FAQs/Lesson_5.md)
-* [Lesson 6 - Differential Privacy for Deep Learning](FAQs/Lesson_6.md)
-* [Lesson 7 - Federated Learning](FAQs/Lesson_7.md)
-* [Lesson 8 - Securing Federated Learning](FAQs/Lesson_8.md)
-* [Miscellaneous](FAQs/Miscellaneous.md)
+1. [About the course](FAQs/About_the_course.md)
+2. [Lesson 2 - Deep Learning with PyTorch](FAQs/Lesson_2.md)
+3. [Lesson 3 - Introducing Differential Privacy](FAQs/Lesson_3.md)
+4. [Lesson 4 - Evaluating the Privacy of a Function](FAQs/Lesson_4.md)
+5. [Lesson 5 - Introducing Local abd Global Differential Privacy](FAQs/Lesson_5.md)
+6. [Lesson 6 - Differential Privacy for Deep Learning](FAQs/Lesson_6.md)
+7. [Lesson 7 - Federated Learning](FAQs/Lesson_7.md)
+8. [Lesson 8 - Securing Federated Learning](FAQs/Lesson_8.md)
+9. [Miscellaneous](FAQs/Miscellaneous.md)
 
 ## Why we have created this repo?
 All the channels of our Slack community are constantly buzzing with great questions and amazing answers. These answers can be in the form of lucid explanations from our peers or references to some awesome resources. But due to a limitation in free plan of Slack, we can search only upto the last 10K messages. Due to this limitation, we are loosing the efforts of our peers and all the amazing resources. To prevent this loss of invaluable resources, we have created this repo where we would be regularly be adding frequently asked questions and the possible solutions shared by our peers in the Slack channels. Also, this repo would help future students of this course as they would find solutions to most of the common problems in a single repo.
@@ -38,6 +38,6 @@ For formatting in Markdown, here is the guide [Mastering Markdown](https://guide
 
 
 ## Resources
-1. [FAQs 2018/19 PyTorch Scholarship challenge](https://github.com/ishgirwan/faqs_pytorch_scholarship).
-2. [Pytorch Udacity resource airtable](https://airtable.com/shrwVC7gPOuTJkxW0/tblUf4zxlIMLjwrbv?blocks=hide).
-3. [Private and Secure AI resource airtable](https://airtable.com/shrnw72B7jTxkb6IB/tblmTxH5ToKfHAqkO/viw6ngRCOjK9dwc5C?blocks=hide) You can contribute by submitting you resource through this [link](https://airtable.com/shrohsUEV89f5zZge).
+* [FAQs 2018/19 PyTorch Scholarship challenge](https://github.com/ishgirwan/faqs_pytorch_scholarship).
+* [Pytorch Udacity resource airtable](https://airtable.com/shrwVC7gPOuTJkxW0/tblUf4zxlIMLjwrbv?blocks=hide).
+* [Private and Secure AI resource airtable](https://airtable.com/shrnw72B7jTxkb6IB/tblmTxH5ToKfHAqkO/viw6ngRCOjK9dwc5C?blocks=hide) You can contribute by submitting you resource through this [link](https://airtable.com/shrohsUEV89f5zZge).
