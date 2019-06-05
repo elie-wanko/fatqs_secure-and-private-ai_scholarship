@@ -1,18 +1,18 @@
-# [FATQs - Private and Secure scholarship by Facebook AI](https://elie-wanko.github.io/fatqs_private-and-secure-ai_scholarship/)
+# [FATQs - Secure and Private  scholarship by Facebook AI](https://elie-wanko.github.io/fatqs_secure-and-private-ai_scholarship/)
 **Frequently Asked Technical Questions in Slack channel of Udacity's Private and Secure Scholarship Challenge 2019.**
 
-![Secure and Private AI Free Course from Udacity and Facebook](https://i1.wp.com/blog.udacity.com/wp-content/uploads/2019/05/Social2-FB.png?resize=768%2C403&ssl=1)
+![Private and Private  AI Free Course from Udacity and Facebook](https://i1.wp.com/blog.udacity.com/wp-content/uploads/2019/05/Social2-FB.png?resize=768%2C403&ssl=1)
 ## Content
-1. [About the course](FATQs/About_the_course.html)
-2. [Lesson 2 - Deep Learning with PyTorch](https://elie-wanko.github.io/fatqs_private-and-secure-ai_scholarship/FATQs/Lesson_2.html)
-3. [Lesson 3 - Introducing Differential Privacy](https://elie-wanko.github.io/fatqs_private-and-secure-ai_scholarship/FATQs/Lesson_3.html)
-4. [Lesson 4 - Evaluating the Privacy of a Function](https://elie-wanko.github.io/fatqs_private-and-secure-ai_scholarship/FATQs/Lesson_4.html)
-5. [Lesson 5 - Introducing Local and Global Differential Privacy](https://elie-wanko.github.io/fatqs_private-and-secure-ai_scholarship/FATQs/Lesson_5.html)
-6. [Lesson 6 - Differential Privacy for Deep Learning](https://elie-wanko.github.io/fatqs_private-and-secure-ai_scholarship/FATQs/Lesson_6.html)
-7. [Lesson 7 - Federated Learning](https://elie-wanko.github.io/fatqs_private-and-secure-ai_scholarship/FATQs/Lesson_7.html)
-8. [Lesson 8 - Securing Federated Learning](https://elie-wanko.github.io/fatqs_private-and-secure-ai_scholarship/FATQs/Lesson_8.html)
-9. [Lesson 9 - Encrypted Deep Learning](https://elie-wanko.github.io/fatqs_private-and-secure-ai_scholarship/FATQs/Lesson_9.html)
-10. [Miscellaneous](FATQs/Miscellaneous.html)
+1. [About the course](https://elie-wanko.github.io/fatqs_secure-and-private-ai_scholarship/FATQs/About_the_course.html)
+2. [Lesson 2 - Deep Learning with PyTorch](https://elie-wanko.github.io/fatqs_secure-and-private-ai_scholarship/FATQs/Lesson_2.html)
+3. [Lesson 3 - Introducing Differential Privacy](https://elie-wanko.github.io/fatqs_secure-and-private-ai_scholarship/FATQs/Lesson_3.html)
+4. [Lesson 4 - Evaluating the Privacy of a Function](https://elie-wanko.github.io/fatqs_secure-and-private-ai_scholarship/FATQs/Lesson_4.html)
+5. [Lesson 5 - Introducing Local and Global Differential Privacy](https://elie-wanko.github.io/fatqs_secure-and-private-ai_scholarship/FATQs/Lesson_5.html)
+6. [Lesson 6 - Differential Privacy for Deep Learning](https://elie-wanko.github.io/fatqs_secure-and-private-ai_scholarship/FATQs/Lesson_6.html)
+7. [Lesson 7 - Federated Learning](https://elie-wanko.github.io/fatqs_secure-and-private-ai_scholarship/FATQs/Lesson_7.html)
+8. [Lesson 8 - Securing Federated Learning](https://elie-wanko.github.io/fatqs_secure-and-private-ai_scholarship/FATQs/Lesson_8.html)
+9. [Lesson 9 - Encrypted Deep Learning](https://elie-wanko.github.io/fatqs_secure-and-private-ai_scholarship/FATQs/Lesson_9.html)
+10. [Miscellaneous](https://elie-wanko.github.io/fatqs_secure-and-private-ai_scholarship/FATQs/Miscellaneous.html)
 
 ## Why did we have created this repo?
 All the channels of our Slack community are constantly buzzing with great questions and amazing answers. These answers can be in the form of lucid explanations from our peers or references to some awesome resources. But due to a limitation in free plan of Slack, we can search only upto the last 10K messages. Due to this limitation, we are loosing the efforts of our peers and all the amazing resources. To prevent this loss of invaluable resources, we have created this repo where we would be regularly be adding frequently asked questions and the possible solutions shared by our peers in the Slack channels. Also, this repo would help future students of this course as they would find solutions to most of the common problems in a single repo.
