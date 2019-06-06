@@ -1,3 +1,0 @@
-# About the course
-
-## Test
