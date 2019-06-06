@@ -4,7 +4,15 @@
 ![Private and Private  AI Free Course from Udacity and Facebook](https://i1.wp.com/blog.udacity.com/wp-content/uploads/2019/05/Social2-FB.png?resize=768%2C403&ssl=1)
 ## Content
 1. [About the course](https://elie-wanko.github.io/fatqs_secure-and-private-ai_scholarship/FATQs/About_the_course.html)
-2. [Lesson 2 - Deep Learning with PyTorch](https://elie-wanko.github.io/fatqs_secure-and-private-ai_scholarship/FATQs/Lesson_2.html)
+
+
+<a href="https://docs.google.com/document/d/1u6Lq_0braZdR6rjVZVaNITXDNfmf0WrW/edit" target="_blank">Lesson 2 - Deep Learning with PyTorch</a>
+
+
+[test 2](https://docs.google.com/document/d/1u6Lq_0braZdR6rjVZVaNITXDNfmf0WrW/edit){:target="_blank"}
+
+
+2. [Lesson 2 - Deep Learning with PyTorch]()
 3. [Lesson 3 - Introducing Differential Privacy](https://elie-wanko.github.io/fatqs_secure-and-private-ai_scholarship/FATQs/Lesson_3.html)
 4. [Lesson 4 - Evaluating the Privacy of a Function](https://elie-wanko.github.io/fatqs_secure-and-private-ai_scholarship/FATQs/Lesson_4.html)
 5. [Lesson 5 - Introducing Local and Global Differential Privacy](https://elie-wanko.github.io/fatqs_secure-and-private-ai_scholarship/FATQs/Lesson_5.html)
