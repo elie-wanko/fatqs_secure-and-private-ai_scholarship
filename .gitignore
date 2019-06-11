@@ -1,0 +1,6 @@
+/.vscode
+vendor
+.vscode
+get-token.php
+credentials.json
+token.json
