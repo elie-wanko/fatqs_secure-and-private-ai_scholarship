@@ -1,1 +1,2 @@
-# udacity
+# Installation
+composer install
