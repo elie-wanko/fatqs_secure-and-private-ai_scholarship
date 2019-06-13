@@ -109,6 +109,7 @@ body {
 }
 #slide-out li>a{
     line-height: 20px;
+    min-height: 48px;
 }
 @media only screen and (min-width: 993px){
 	nav.header__top a.sidenav-trigger {
