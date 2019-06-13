@@ -28,7 +28,7 @@ $lessons = sort_lessons($lessons);
 </section>
 <section class="main__content--block">
     <h2>Content</h2>
-    <ol>
+    <ul>
         <?php
             foreach($lessons as $lesson) {
                 echo '<li>';
@@ -36,7 +36,7 @@ $lessons = sort_lessons($lessons);
                 echo '</li>';
             }
         ?>
-    </ol>
+    </ul>
     <h2>Why we have created this repo?</h2>
     <p>All the channels of our Slack community are constantly buzzing with great questions and amazing answers.
         These answers can be in the form of lucid explanations from our peers or references to some awesome resources.
@@ -52,13 +52,13 @@ $lessons = sort_lessons($lessons);
         Facebook” but also for future students of <a href="https://www.udacity.com/course/secure-and-private-ai--ud185">Secure and Private AI course</a> by Facebook AI on
         Udacity.</p>
     <h2>Other Resources</h2>
-    <ul>
+    <ol>
         <li><a href="#">FATQs 2018/19 PyTorch Scholarship challenge</a>.</li>
         <li><a href="#">Pytorch Udacity resource airtable</a>.</li>
         <li><a href="#">Secure and Private AI resource airtable</a>, you can contribute by submitting your resource
             through this <a href="https://airtable.com/shrohsUEV89f5zZge">link</a>.
         </li>
-    </ul>
+    </ol>
 
 </section>
 
