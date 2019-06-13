@@ -24,7 +24,7 @@ $lessons = sort_lessons($lessons);
 <section class="banner center-align theme--bg">
     <h1>Secure and Private AI</h1>
     <h2>FATQs in the Slack channel of Udacity's Secure and Private Scholarship Challenge 2019.</h2>
-    <a href="#">View on GitHub</a>
+    <a href="https://github.com/elie-wanko/fatqs_secure-and-private-ai_scholarship">View on GitHub</a>
 </section>
 <section class="main__content--block">
     <h2>Content</h2>
@@ -49,14 +49,14 @@ $lessons = sort_lessons($lessons);
         would
         find solutions to most of the common problems in a single repo.</p>
     <p>We hope to make this repo useful not only for the students of “Secure and Private AI Scholarship Challenge with
-        Facebook” but also for future students of <a href="#">Secure and Private AI course</a> by Facebook AI on
+        Facebook” but also for future students of <a href="https://www.udacity.com/course/secure-and-private-ai--ud185">Secure and Private AI course</a> by Facebook AI on
         Udacity.</p>
     <h2>Other Resources</h2>
     <ul>
         <li><a href="#">FATQs 2018/19 PyTorch Scholarship challenge</a>.</li>
         <li><a href="#">Pytorch Udacity resource airtable</a>.</li>
         <li><a href="#">Secure and Private AI resource airtable</a>, you can contribute by submitting your resource
-            through this <a href="#">link</a>.
+            through this <a href="https://airtable.com/shrohsUEV89f5zZge">link</a>.
         </li>
     </ul>
 
