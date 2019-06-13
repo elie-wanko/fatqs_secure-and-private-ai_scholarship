@@ -12,3 +12,4 @@ We hope to make this repo useful not only for the students of "Secure and Privat
 * [FAQs 2018/19 PyTorch Scholarship challenge](https://github.com/ishgirwan/faqs_pytorch_scholarship).
 * [Pytorch Udacity resource airtable](https://airtable.com/shrwVC7gPOuTJkxW0/tblUf4zxlIMLjwrbv?blocks=hide).
 * [Private and Secure AI resource airtable](https://airtable.com/shrnw72B7jTxkb6IB/tblmTxH5ToKfHAqkO/viw6ngRCOjK9dwc5C?blocks=hide), you can contribute by submitting you resource through this [link](https://airtable.com/shrohsUEV89f5zZge).
+

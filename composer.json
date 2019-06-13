@@ -1,0 +1,11 @@
+{
+    "name": "secure-private-api/udacity",
+    "authors": [
+        {
+            "name": "udacity team"
+        }
+    ],
+    "require": {
+        "google/apiclient": "^2.0"
+    }
+}

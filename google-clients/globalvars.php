@@ -1,0 +1,5 @@
+<?php
+
+putenv('credentials={"installed":{"client_id":"632795072000-3rf7um4uafb50psn1j1mutgin41tcm7f.apps.googleusercontent.com","project_id":"secure-ai-udacity","auth_uri":"https://accounts.google.com/o/oauth2/auth","token_uri":"https://oauth2.googleapis.com/token","auth_provider_x509_cert_url":"https://www.googleapis.com/oauth2/v1/certs","client_secret":"GnmFIBxxs4wmnImlwBOEuwkC","redirect_uris":["urn:ietf:wg:oauth:2.0:oob","http://localhost"]}}');
+putenv("google_drive=https://www.googleapis.com/drive/v2/files?q='1a2V6obuD_A-A2PEo3Pk6-_uG1jxVcMTR'+in+parents&key=yDzcfHtbVUtHlbY0uKL7L5Fr");
+putenv('token={"access_token":"ya29.GlslBwellNRv8Zxngo2su4a35XzVrJbouwpp1IgbP-3usIkUIn6bCtEkRfp4K4uhXE_xGRNoq-L62qtIwIdPFnSv-SqPDJUHlUbpAeNgrySKn7-Hwj06-Miwowfg","expires_in":3600,"refresh_token":"1\/cy91PFm5Zr610VIjKfNEOdvLoEW6jgXAwMOsfO_WgiM","scope":"https:\/\/www.googleapis.com\/auth\/drive.metadata.readonly https:\/\/www.googleapis.com\/auth\/spreadsheets.readonly","token_type":"Bearer","created":1560281238}');
