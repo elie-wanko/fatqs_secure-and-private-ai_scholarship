@@ -53,9 +53,9 @@ $lessons = sort_lessons($lessons);
         Udacity.</p>
     <h2>Other Resources</h2>
     <ol>
-        <li><a href="#">FATQs 2018/19 PyTorch Scholarship challenge</a>.</li>
-        <li><a href="#">Pytorch Udacity resource airtable</a>.</li>
-        <li><a href="#">Secure and Private AI resource airtable</a>, you can contribute by submitting your resource
+        <li><a href="https://github.com/ishgirwan/faqs_pytorch_scholarship">FATQs 2018/19 PyTorch Scholarship challenge</a>.</li>
+        <li><a href="https://airtable.com/shrwVC7gPOuTJkxW0/tblUf4zxlIMLjwrbv?blocks=hide">Airtable - Pytorch Udacity resource database</a>.</li>
+        <li><a href="https://airtable.com/shrnw72B7jTxkb6IB/tblmTxH5ToKfHAqkO/viw6ngRCOjK9dwc5C?blocks=hide">Airtable - Secure and Private AI resource airtable</a>, you can contribute by submitting your resource
             through this <a href="https://airtable.com/shrohsUEV89f5zZge">link</a>.
         </li>
     </ol>

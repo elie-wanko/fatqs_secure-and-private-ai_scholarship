@@ -67,7 +67,7 @@ if (empty($answerValues)) {
     <div class="container-lg">
         <div class="row">
             <div class="col m4 s12 questions--block">
-                <h5>Frequently Asked Questions</h5>
+                <h5>Frequently Asked Technical Questions</h5>
                 <ul>
                     <?php
                     foreach ($questions as $key => $question) {
