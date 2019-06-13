@@ -107,6 +107,9 @@ body {
 .main__content--block a:hover{
 	text-decoration: underline;
 }
+#slide-out li>a{
+    line-height: 20px;
+}
 @media only screen and (min-width: 993px){
 	nav.header__top a.sidenav-trigger {
 	     display:block; 
