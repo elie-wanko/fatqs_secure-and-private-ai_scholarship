@@ -1,4 +1,4 @@
-# [FATQs - Secure and Private  scholarship by Facebook AI](https://elie-wanko.github.io/fatqs_secure-and-private-ai_scholarship/)
+# [FATQs - Secure and Private  scholarship by Facebook AI](https://fatqs-private-and-secure-ai.herokuapp.com/)
 **Frequently Asked Technical Questions in Slack channel of Udacity's Private and Secure Scholarship Challenge 2019.**
 
 ![Private and Private  AI Free Course from Udacity and Facebook](https://i1.wp.com/blog.udacity.com/wp-content/uploads/2019/05/Social2-FB.png?resize=768%2C403&ssl=1)
