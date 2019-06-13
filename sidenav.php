@@ -20,7 +20,7 @@ $lessons = sort_lessons($lessons);
     <?php
     foreach($lessons as $lesson) {
         echo '<li>';
-        echo '<a href = "lesson.php?id=' . $lesson->id . '&title=' . $lesson->title .'" target="_blank">' . $lesson->title . '</a>';
+        echo '<a href = "lesson.php?id=' . $lesson[0] . '&title=' . $lesson[1] .'" target="_blank">' . $lesson[1] . '</a>';
         echo '</li>';
     }
     ?>
