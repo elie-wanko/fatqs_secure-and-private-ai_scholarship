@@ -15,7 +15,7 @@ $lessons = sort_lessons($lessons);
 <ul id="slide-out" class="sidenav">
     <li>
         <div class="user-view theme--bg">
-                <a href="https://fatqs-private-and-secure-ai.herokuapp.com/">FATQs</a>
+            <a href="https://fatqs-private-and-secure-ai.herokuapp.com/">FATQs</a>
         </div>
     </li>
     <?php

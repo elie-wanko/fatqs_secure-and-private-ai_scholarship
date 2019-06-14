@@ -52,11 +52,11 @@ if (empty($answerValues)) {
     <nav class="header__top theme--bg">
         <div class="nav-wrapper">
             <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-            <h5>
+            <h4>
                 <?php
                     echo $_GET['title'];
                 ?>
-            </h5>
+            </h4>
             <?php
             require 'sidenav.php';
             ?>
