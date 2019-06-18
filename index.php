@@ -1,7 +1,11 @@
 <?php
 require __DIR__ . '/common/helper.php';
 
-$lessons = getAllLessons('nepali');
+$searchText = '@';
+if(isset($GET['searchText'])){
+   $searchText = $GET['searchText'];
+}
+$lessons = getAllLessons('@');
 ?>
 
 <!DOCTYPE html>

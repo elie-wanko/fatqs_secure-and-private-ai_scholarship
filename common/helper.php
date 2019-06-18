@@ -1,9 +1,12 @@
 <?php
+
+require __DIR__ . '/../vendor/autoload.php';
+require __DIR__ . '/../google-api/client.php';
+require __DIR__ . '/../google-api/globalvars.php';
+
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
-require __DIR__ . '/../vendor/autoload.php';
-require __DIR__ . '/../google-api/client.php';
 
 /**
  * @param $lessons
@@ -22,15 +25,19 @@ function sort_lessons($lessons)
 }
 
 /**
+ * @param string $type
  * @param $scopes
- * @return Google_Service_Drive
+ * @return Google_Service_Drive|Google_Service_Sheets
  * @throws Google_Exception
  */
-function connect($scopes)
+function connect($type = 'Drive', $scopes)
 {
     $client = getClient($scopes);
-    $service = new Google_Service_Drive($client);
-    return $service;
+    if ($type === 'Drive') {
+        return new Google_Service_Drive($client);
+    }
+
+    return new Google_Service_Sheets($client);
 }
 
 /**
@@ -42,7 +49,7 @@ function getAllLessons($searchText = null)
 {
 
     // Connect to google api
-    $service = connect(Google_Service_Drive::DRIVE_METADATA_READONLY);
+    $service = connect('Drive', Google_Service_Drive::DRIVE_METADATA_READONLY);
     $drive = getenv('drive');
 
     // Query Params
@@ -64,9 +71,8 @@ function getAllLessons($searchText = null)
  * @throws Google_Exception
  */
 function getLessonDetail($spreadsheetId)
-{
-    // Connect to google api
-    $service = connect(Google_Service_Sheets::SPREADSHEETS_READONLY);
+{    // Connect to google api
+    $service = connect('Spreadsheet', Google_Service_Sheets::SPREADSHEETS_READONLY);
 
     // Get Questions
     $questionRange = 'questions!A2:B3';
@@ -84,10 +90,9 @@ function getLessonDetail($spreadsheetId)
     }
 
     // Get Answers
-    $answers = [];
     $answersRange = 'answers!A2:C3';
     $answersResponse = $service->spreadsheets_values->get($spreadsheetId, $answersRange);
     $answerValues = $answersResponse->getValues();
 
-    return $answerValues;
+    return ['questions' => $questions, 'answers' => $answerValues];
 }

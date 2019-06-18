@@ -2,7 +2,11 @@
 require __DIR__ . '/../common/helper.php';
 
 $spreadsheetId = $_GET['id'];
-$answerValues = getLessonDetail($spreadsheetId);
+$response = getLessonDetail($spreadsheetId);
+
+$answers = [];
+$questions = $response['questions'];
+$answerValues = $response['answers'];
 
 if (empty($answerValues)) {
     print "No data found.\n";
@@ -19,8 +23,8 @@ if (empty($answerValues)) {
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection"/>
-    <link type="text/css" rel="stylesheet" href="css/style.css"/>
+    <link type="text/css" rel="stylesheet" href="../css/materialize.min.css" media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="../css/style.css"/>
 
 </head>
 
@@ -35,7 +39,7 @@ if (empty($answerValues)) {
                 ?>
             </h4>
             <?php
-            require 'sidenav.php';
+            require __DIR__ . '/sidenav.php';
             ?>
         </div>
     </nav>
@@ -68,9 +72,9 @@ if (empty($answerValues)) {
         </div>
     </div>
 </section>
-<script type="text/javascript" src="js/jquery.js"></script>
-<script type="text/javascript" src="js/materialize.min.js"></script>
-<script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript" src="../js/jquery.js"></script>
+<script type="text/javascript" src="../js/materialize.min.js"></script>
+<script type="text/javascript" src="../js/main.js"></script>
 
 </body>
 </html>
