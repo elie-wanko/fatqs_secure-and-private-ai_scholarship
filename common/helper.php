@@ -1,4 +1,7 @@
 <?php
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
 require __DIR__ . '/../vendor/autoload.php';
 require __DIR__ . '/../google-api/client.php';
 
@@ -21,6 +24,7 @@ function sort_lessons($lessons)
 /**
  * @param $scopes
  * @return Google_Service_Drive
+ * @throws Google_Exception
  */
 function connect($scopes)
 {
@@ -32,6 +36,7 @@ function connect($scopes)
 /**
  * @param null $searchText
  * @return array|Google_Service_Drive_DriveFile
+ * @throws Google_Exception
  */
 function getAllLessons($searchText = null)
 {
@@ -53,6 +58,11 @@ function getAllLessons($searchText = null)
     return $lessons;
 }
 
+/**
+ * @param $spreadsheetId
+ * @return mixed
+ * @throws Google_Exception
+ */
 function getLessonDetail($spreadsheetId)
 {
     // Connect to google api

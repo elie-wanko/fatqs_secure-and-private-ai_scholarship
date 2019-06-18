@@ -1,6 +1,9 @@
 <?php
-require __DIR__ . '/globalvars.php';
+require 'globalvars.php';
 
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
 /**
 * @return \Google_Client
 * @throws \Google_Exception
@@ -8,7 +11,7 @@ require __DIR__ . '/globalvars.php';
 function getClient($scopes)
 {
     $client = new Google_Client();
-    $client->setApplicationName('Google Drive API PHP Quickstart');
+    $client->setApplicationName('Google Drive API');
     $client->setScopes($scopes);
     $client->setAuthConfig(json_decode(getenv('credentials'), true));
     $client->setAccessType('offline');
