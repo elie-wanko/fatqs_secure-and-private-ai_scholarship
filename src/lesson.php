@@ -1,5 +1,5 @@
 <?php
-require 'google-clients/client.php';
+require '../google-api/client.php';
 // Get the API client and construct the service object.
 $client = getClient(Google_Service_Sheets::SPREADSHEETS_READONLY);
 $service = new Google_Service_Sheets($client);

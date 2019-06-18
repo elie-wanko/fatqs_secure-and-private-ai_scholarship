@@ -1,5 +1,5 @@
 <?php
-require 'google-clients/client.php';
+require 'google-api/client.php';
 require 'common/helper.php';
 // Get the API client and construct the service object.
 $client = getClient(Google_Service_Drive::DRIVE_METADATA_READONLY);
@@ -42,7 +42,7 @@ if (count($results->getFiles()) > 0) {
         <?php
             foreach($lessons as $lesson) {
                 echo '<li>';
-                echo '<a href = "lesson.php?id=' . $lesson[0] . '&title=' . $lesson[1] .'" >' . $lesson[1] . '</a>';
+                echo '<a href = "src/lesson.php?id=' . $lesson[0] . '&title=' . $lesson[1] .'" >' . $lesson[1] . '</a>';
                 echo '</li>';
             }
         ?>
