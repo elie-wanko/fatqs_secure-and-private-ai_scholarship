@@ -19,7 +19,7 @@ body {
     font-size: 22px;
 }
 .questions--block li{
-	list-style-type: upper-alpha !important;
+	list-style-type: decimal !important;
 	padding: 10px;
 }
 .questions--block ul{
@@ -113,7 +113,7 @@ body {
 }
 @media only screen and (min-width: 993px){
 	nav.header__top a.sidenav-trigger {
-	     display:block; 
+	     display:block;
 	}
 }
 @media screen and (max-width: 64em) and (min-width: 42em){
