@@ -4,3 +4,4 @@ vendor
 credentials.json
 token.json
 .idea
+globalvars.php

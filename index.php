@@ -21,6 +21,17 @@ $lessons = getAllLessons('@');
 <section class="banner center-align theme--bg">
     <h1>Secure and Private AI</h1>
     <h2>FATQs in the Slack channel of Udacity's Secure and Private Scholarship Challenge 2019.</h2>
+    <div class="row banner__search">
+        <form class="col offset-s3 s6">
+            <div class="row">
+                <div class="input-field col s12">
+                    <i class="material-icons prefix">search</i>
+                    <textarea id="icon_prefix2" class="materialize-textarea"></textarea>
+                    <label for="icon_prefix2">Example: What is Convolutional Neural Network?</label>
+                </div>
+            </div>
+        </form>
+    </div>
     <a href="https://github.com/elie-wanko/fatqs_secure-and-private-ai_scholarship">View on GitHub</a>
 </section>
 <section class="main__content--block">
