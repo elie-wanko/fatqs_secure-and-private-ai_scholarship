@@ -27,7 +27,7 @@ $lessons = getAllLessons('@');
                 <div class="input-field col s12">
                     <i class="material-icons prefix">search</i>
                     <textarea id="icon_prefix2" class="materialize-textarea"></textarea>
-                    <label for="icon_prefix2">Example: What is Convolutional Neural Network?</label>
+                    <label for="icon_prefix2">Enter your search query</label>
                 </div>
             </div>
         </form>
