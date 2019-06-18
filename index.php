@@ -1,13 +1,23 @@
 <?php
-require 'google-clients/drive-client.php';
+require 'google-clients/client.php';
 require 'common/helper.php';
 // Get the API client and construct the service object.
-$client = getDriveClient();
-$httpClient = $client->authorize();
-$response = $httpClient->get(getenv("google_drive"));
+$client = getClient(Google_Service_Drive::DRIVE_METADATA_READONLY);
+$service = new Google_Service_Drive($client);
+$drive = getenv('drive');
 
-$lessons = json_decode($response->getBody()->getContents())->items;
-$lessons = sort_lessons($lessons);
+// Print the names and IDs for up to 10 files.
+$optParams = ['q' =>
+    ["'{$drive}' in parents and fullText contains 'chinese'"]
+];
+$results = $service->files->listFiles($optParams);
+$lessons = [];
+if (count($results->getFiles()) > 0) {
+    $lessons = $results->getFiles();
+    $lessons = sort_lessons($lessons);
+}
+
+
 ?>
 
 <!DOCTYPE html>

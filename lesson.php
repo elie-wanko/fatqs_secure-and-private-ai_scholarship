@@ -1,7 +1,7 @@
 <?php
-require 'google-clients/sheet-client.php';
+require 'google-clients/client.php';
 // Get the API client and construct the service object.
-$client = getClient();
+$client = getClient(Google_Service_Sheets::SPREADSHEETS_READONLY);
 $service = new Google_Service_Sheets($client);
 $spreadsheetId = $_GET['id'];
 
@@ -19,7 +19,6 @@ if (empty($questionValues)) {
         $questions[$row[0]] = $row[1];
     }
 }
-
 
 // Get Answers
 $answers = [];
@@ -97,4 +96,3 @@ if (empty($answerValues)) {
 
 </body>
 </html>
-        

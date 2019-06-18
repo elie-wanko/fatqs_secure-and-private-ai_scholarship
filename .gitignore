@@ -3,3 +3,4 @@ vendor
 .vscode
 credentials.json
 token.json
+.idea
