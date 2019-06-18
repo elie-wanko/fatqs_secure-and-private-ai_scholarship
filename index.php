@@ -1,23 +1,7 @@
 <?php
-require 'google-api/client.php';
-require 'common/helper.php';
-// Get the API client and construct the service object.
-$client = getClient(Google_Service_Drive::DRIVE_METADATA_READONLY);
-$service = new Google_Service_Drive($client);
-$drive = getenv('drive');
+require __DIR__ . '/common/helper.php';
 
-// Print the names and IDs for up to 10 files.
-$optParams = ['q' =>
-    ["'{$drive}' in parents and fullText contains 'chinese'"]
-];
-$results = $service->files->listFiles($optParams);
-$lessons = [];
-if (count($results->getFiles()) > 0) {
-    $lessons = $results->getFiles();
-    $lessons = sort_lessons($lessons);
-}
-
-
+$lessons = getAllLessons('nepali');
 ?>
 
 <!DOCTYPE html>
@@ -27,7 +11,6 @@ if (count($results->getFiles()) > 0) {
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection"/>
     <link type="text/css" rel="stylesheet" href="css/style.css"/>
-
 </head>
 
 <body>
@@ -40,11 +23,11 @@ if (count($results->getFiles()) > 0) {
     <h2>Content</h2>
     <ul>
         <?php
-            foreach($lessons as $lesson) {
-                echo '<li>';
-                echo '<a href = "src/lesson.php?id=' . $lesson[0] . '&title=' . $lesson[1] .'" >' . $lesson[1] . '</a>';
-                echo '</li>';
-            }
+        foreach ($lessons as $lesson) {
+            echo '<li>';
+            echo '<a href = "src/lesson.php?id=' . $lesson[0] . '&title=' . $lesson[1] . '" >' . $lesson[1] . '</a>';
+            echo '</li>';
+        }
         ?>
     </ul>
     <h2>Why we have created this repo?</h2>
@@ -59,17 +42,22 @@ if (count($results->getFiles()) > 0) {
         would
         find solutions to most of the common problems in a single repo.</p>
     <p>We hope to make this repo useful not only for the students of “Secure and Private AI Scholarship Challenge with
-        Facebook” but also for future students of <a href="https://www.udacity.com/course/secure-and-private-ai--ud185">Secure and Private AI course</a> by Facebook AI on
+        Facebook” but also for future students of <a href="https://www.udacity.com/course/secure-and-private-ai--ud185">Secure
+            and Private AI course</a> by Facebook AI on
         Udacity.</p>
     <h2>Other Resources</h2>
     <ol>
-        <li><a href="https://github.com/ishgirwan/faqs_pytorch_scholarship">FATQs 2018/19 PyTorch Scholarship challenge</a>.</li>
-        <li><a href="https://airtable.com/shrwVC7gPOuTJkxW0/tblUf4zxlIMLjwrbv?blocks=hide">Airtable - Pytorch Udacity resource database</a>.</li>
-        <li><a href="https://airtable.com/shrnw72B7jTxkb6IB/tblmTxH5ToKfHAqkO/viw6ngRCOjK9dwc5C?blocks=hide">Airtable - Secure and Private AI resource airtable</a>, you can contribute by submitting your resource
+        <li><a href="https://github.com/ishgirwan/faqs_pytorch_scholarship">FATQs 2018/19 PyTorch Scholarship
+                challenge</a>.
+        </li>
+        <li><a href="https://airtable.com/shrwVC7gPOuTJkxW0/tblUf4zxlIMLjwrbv?blocks=hide">Airtable - Pytorch Udacity
+                resource database</a>.
+        </li>
+        <li><a href="https://airtable.com/shrnw72B7jTxkb6IB/tblmTxH5ToKfHAqkO/viw6ngRCOjK9dwc5C?blocks=hide">Airtable -
+                Secure and Private AI resource airtable</a>, you can contribute by submitting your resource
             through this <a href="https://airtable.com/shrohsUEV89f5zZge">link</a>.
         </li>
     </ol>
-
 </section>
 
 <script type="text/javascript" src="js/jquery.js"></script>

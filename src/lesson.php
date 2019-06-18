@@ -1,30 +1,8 @@
 <?php
-require '../google-api/client.php';
-// Get the API client and construct the service object.
-$client = getClient(Google_Service_Sheets::SPREADSHEETS_READONLY);
-$service = new Google_Service_Sheets($client);
+require __DIR__ . '/../common/helper.php';
+
 $spreadsheetId = $_GET['id'];
-
-// Get Questions
-$questionRange = 'questions!A2:B3';
-$questionResponse = $service->spreadsheets_values->get($spreadsheetId, $questionRange);
-$questionValues = $questionResponse->getValues();
-
-$questions = [];
-
-if (empty($questionValues)) {
-    print "No data found.\n";
-} else {
-    foreach ($questionValues as $row) {
-        $questions[$row[0]] = $row[1];
-    }
-}
-
-// Get Answers
-$answers = [];
-$answersRange = 'answers!A2:C3';
-$answersResponse = $service->spreadsheets_values->get($spreadsheetId, $answersRange);
-$answerValues = $answersResponse->getValues();
+$answerValues = getLessonDetail($spreadsheetId);
 
 if (empty($answerValues)) {
     print "No data found.\n";
@@ -53,7 +31,7 @@ if (empty($answerValues)) {
             <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
             <h4>
                 <?php
-                    echo $_GET['title'];
+                echo $_GET['title'];
                 ?>
             </h4>
             <?php
@@ -71,7 +49,7 @@ if (empty($answerValues)) {
                     <?php
                     foreach ($questions as $key => $question) {
                         echo "<li>";
-                        echo '<a href="#" class="question" data-question="' . $question .'" data-answer="' . $answers[$key] . '" >' . $question . '</a>';
+                        echo '<a href="#" class="question" data-question="' . $question . '" data-answer="' . $answers[$key] . '" >' . $question . '</a>';
                         echo "</li>";
                     }
                     ?>
