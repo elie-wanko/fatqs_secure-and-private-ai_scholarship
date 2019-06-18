@@ -52,9 +52,9 @@ if (empty($answerValues)) {
                     <?php
                     unset($questions['Id']);
                     foreach ($questions as $key => $question) {
-                        $answer = isset($answers[$key])?$answers[$key]:'';
+
                         echo "<li>";
-                        echo '<a href="#" class="question" data-question="' . $question . '" data-answer="' . $answer . '" >' . $question . '</a>';
+                        echo '<a href="#" class="question" data-index="'. $key.'" data-question="' . $question . '" >' . $question . '</a>';
                         echo "</li>";
                     }
                     ?>
@@ -62,13 +62,18 @@ if (empty($answerValues)) {
             </div>
             <div class="col m8 s12 answers--block card">
                 <h5>Please choose a question to view the answer.</h5>
-                <div id="answers--block" class="hiddendiv">
-                    <p>Q: <strong class="question-title text-accent-1"></strong></p>
-                    <p>
-                        <strong>Ans.</strong>
-                        <span class="answer"></span>
-                    </p>
-                </div>
+                <?php
+                foreach ($questions as $key => $question) {
+                    $answer = isset($answers[$key]) ? $answers[$key] : '';
+                ?>
+                    <div class="answers--content" data-index="<?php echo $key ?>">
+                        <p>Q: <strong class="question-title text-accent-1"></strong></p>
+                        <p>
+                            <strong>Ans.</strong>
+                            <span class="answer"><?php echo $answer ?></span>
+                        </p>
+                    </div>
+                <?php } ?>
             </div>
         </div>
     </div>

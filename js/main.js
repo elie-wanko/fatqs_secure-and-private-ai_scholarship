@@ -9,12 +9,13 @@
      */
     $(function () {
         $('.sidenav').sidenav();
+        $('.answers--content').hide();
+        $('.answers--block').find("[data-index='1']").show();
 
         $('.question').on('click', function () {
-            $('#answers--block').removeClass('hiddendiv');
-            $('#answers--block').prev().html("");
-            $('.question-title').html($(this).data('question'));
-            $('.answer').html($(this).data('answer'));
+            let index = $(this).data('index');
+            $('.answers--content').hide();
+            $('.answers--block').find("[data-index='" + index + "']").show();
         });
 
         $('#search_text').on('keypress', function(e){
