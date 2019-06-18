@@ -2,10 +2,10 @@
 require __DIR__ . '/common/helper.php';
 
 $searchText = '@';
-if(isset($GET['searchText'])){
-   $searchText = $GET['searchText'];
+if(isset($_GET['search_text'])){
+   $searchText = $_GET['search_text'];
 }
-$lessons = getAllLessons('@');
+$lessons = getAllLessons($searchText);
 ?>
 
 <!DOCTYPE html>
@@ -22,12 +22,12 @@ $lessons = getAllLessons('@');
     <h1>Secure and Private AI</h1>
     <h2>FATQs in the Slack channel of Udacity's Secure and Private Scholarship Challenge 2019.</h2>
     <div class="row banner__search">
-        <form class="col offset-s3 s6">
+        <form action="<?php $_SERVER["PHP_SELF"] ?>"class="col offset-s3 s6">
             <div class="row">
                 <div class="input-field col s12">
                     <i class="material-icons prefix">search</i>
-                    <textarea id="icon_prefix2" class="materialize-textarea"></textarea>
-                    <label for="icon_prefix2">Enter your search query</label>
+                    <input type="text" id="search_text" name="search_text" class="materialize-textarea">
+                    <label for="search_text">Enter your search query</label>
                 </div>
             </div>
         </form>

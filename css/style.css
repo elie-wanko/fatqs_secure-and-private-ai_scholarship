@@ -111,6 +111,9 @@ body {
     line-height: 20px;
     min-height: 48px;
 }
+#search_text{
+    color: #fff;
+}
 @media only screen and (min-width: 993px){
 	nav.header__top a.sidenav-trigger {
 	     display:block;
