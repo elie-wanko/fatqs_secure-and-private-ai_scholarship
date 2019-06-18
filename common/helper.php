@@ -75,7 +75,7 @@ function getLessonDetail($spreadsheetId)
     $service = connect('Spreadsheet', Google_Service_Sheets::SPREADSHEETS_READONLY);
 
     // Get Questions
-    $questionRange = 'questions!A2:B3';
+    $questionRange = 'questions';
     $questionResponse = $service->spreadsheets_values->get($spreadsheetId, $questionRange);
     $questionValues = $questionResponse->getValues();
 
@@ -90,7 +90,7 @@ function getLessonDetail($spreadsheetId)
     }
 
     // Get Answers
-    $answersRange = 'answers!A2:C3';
+    $answersRange = 'answers';
     $answersResponse = $service->spreadsheets_values->get($spreadsheetId, $answersRange);
     $answerValues = $answersResponse->getValues();
 

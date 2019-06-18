@@ -7,7 +7,6 @@ $response = getLessonDetail($spreadsheetId);
 $answers = [];
 $questions = $response['questions'];
 $answerValues = $response['answers'];
-
 if (empty($answerValues)) {
     print "No data found.\n";
 } else {
@@ -51,9 +50,11 @@ if (empty($answerValues)) {
                 <h5>Frequently Asked Technical Questions</h5>
                 <ul>
                     <?php
+                    unset($questions['Id']);
                     foreach ($questions as $key => $question) {
+                        $answer = isset($answers[$key])?$answers[$key]:'';
                         echo "<li>";
-                        echo '<a href="#" class="question" data-question="' . $question . '" data-answer="' . $answers[$key] . '" >' . $question . '</a>';
+                        echo '<a href="#" class="question" data-question="' . $question . '" data-answer="' . $answer . '" >' . $question . '</a>';
                         echo "</li>";
                     }
                     ?>
