@@ -45,7 +45,7 @@ $lessons = getAllLessons($searchText);
         }
         ?>
     </ul>
-    <h2>Why we have created this repo?</h2>
+    <h2>Why we created this repo?</h2>
     <p>All the channels of our Slack community are constantly buzzing with great questions and amazing answers.
         These answers can be in the form of lucid explanations from our peers or references to some awesome resources.
         But due to a limitation of the free plan of Slack, we can search only upto the last 10K messages. As such, we
@@ -66,10 +66,10 @@ $lessons = getAllLessons($searchText);
                 challenge</a>.
         </li>
         <li><a href="https://airtable.com/shrwVC7gPOuTJkxW0/tblUf4zxlIMLjwrbv?blocks=hide">Airtable - Pytorch Udacity
-                resource database</a>.
+                resource database.</a>.
         </li>
         <li><a href="https://airtable.com/shrnw72B7jTxkb6IB/tblmTxH5ToKfHAqkO/viw6ngRCOjK9dwc5C?blocks=hide">Airtable -
-                Secure and Private AI resource airtable</a>, you can contribute by submitting your resource
+                Secure and Private AI resource database</a>, you can contribute by submitting your resource
             through this <a href="https://airtable.com/shrohsUEV89f5zZge">link</a>.
         </li>
     </ol>
