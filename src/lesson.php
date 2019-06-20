@@ -67,7 +67,7 @@ if (empty($answerValues)) {
                     $answer = isset($answers[$key]) ? $answers[$key] : '';
                 ?>
                     <div class="answers--content" data-index="<?php echo $key ?>">
-                        <p><b>Q.:  </b>: <strong class="question-title text-accent-1"></strong></p>
+                        <p><b>Q.:  </b><strong class="question-title text-accent-1"></strong></p>
                         <p>
                             <strong><b>A.:  </b></strong>
                             <span class="answer"><?php echo $answer ?></span>
