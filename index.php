@@ -62,6 +62,10 @@ $lessons = getAllLessons($searchText);
         Udacity.</p>
     <h2>Other Resources</h2>
     <ol>
+        <li>
+            For <b>Newbies</b><a href="https://docs.google.com/spreadsheets/d/1b7eD6dgWXgFuFpbWHImC5lovWLBfPR_zgaedBRA_21s/edit#gid=0"> 
+            Summary notes compiled by previous scholars in the PyTorch scholarship challenge.</a>
+        </li>
         <li><a href="https://github.com/ishgirwan/faqs_pytorch_scholarship">FATQs 2018/19 PyTorch Scholarship
                 challenge</a>.
         </li>
