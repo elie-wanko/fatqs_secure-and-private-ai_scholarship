@@ -35,10 +35,10 @@ $title = $_GET['title'];
             <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
             <a href="#" class="brand-logo"><?php echo $title; ?></a>
             <form id="search__form" action="<?php $_SERVER["PHP_SELF"] ?>" class="right">
-                <div class="input-field">
-                    <input type="search" name="search_text" value="<?php echo $searchText ?>">
-                    <label class="label-icon" for="search"><i class="material-icons">search</i></label>
-                    <i class="material-icons">close</i>
+                <div class="input-field <?php echo ($searchText != '')?'active':'' ?>">
+                    <input type="search" name="search_text" value="<?php echo $searchText ?>" >
+                    <label class="label-icon" for="search"><i class="material-icons icon__search">search</i></label>
+                    <i class="material-icons icon__close">close</i>
                 </div>
                 <input type="hidden" name="id" value="<?php echo $docID; ?>">
                 <input type="hidden" name="title" value="<?php echo $title; ?>">

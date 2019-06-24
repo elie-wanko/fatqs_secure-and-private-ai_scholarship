@@ -23,6 +23,10 @@
                 $("#search__form").submit();
             }
         });
+        $(".icon__close").on('click', function(){
+            $( ":input[name='search_text']" ).val("");
+            $("#search__form").submit();
+        });
     });
 
 }(jQuery, window, document));

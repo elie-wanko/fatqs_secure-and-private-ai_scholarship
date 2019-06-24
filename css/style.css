@@ -108,9 +108,20 @@ body {
 .main__content--block a:hover{
 	text-decoration: underline;
 }
+
 #slide-out li>a{
     line-height: 20px;
     min-height: 48px;
+}
+
+.active{
+    background-color: #fff;
+}
+.active > .icon__search{
+    color: #000 !important;
+}
+.active > .icon__close{
+    color: #000 !important;
 }
 @media only screen and (min-width: 993px){
 	nav.header__top a.sidenav-trigger {
