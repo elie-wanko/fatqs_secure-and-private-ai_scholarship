@@ -16,7 +16,6 @@
             let index = $(this).data('index');
             $('.answers--content').hide();
             $('.answers--block').find("[data-index='" + index + "']").show();
-            $('.answers--block').find("h5").hide();
         });
 
         $('#search_text').on('keypress', function(e){

@@ -61,7 +61,6 @@ if (empty($answerValues)) {
                 </ul>
             </div>
             <div class="col m8 s12 answers--block card">
-                <h5>Please choose a question to view the answer.</h5>
                 <?php
                 foreach ($questions as $key => $question) {
                     $answer = isset($answers[$key]) ? $answers[$key] : '';
