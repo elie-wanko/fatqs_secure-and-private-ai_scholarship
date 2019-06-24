@@ -7,7 +7,7 @@ require __DIR__ . '/../google-api/globalvars.php';
 
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
-error_reporting(E_ALL);
+error_reporting(E_ERROR);
 
 /**
  * @param $lessons
@@ -118,6 +118,13 @@ function search($data, $searchText)
     if ($searchText === '') {
         return $questions_answers;
     }
-
-    return $fuse->search($searchText);
+    $response = $fuse->search($searchText);
+    $questions_answers = [];
+    foreach($response as $qa){
+        $questions_answers[] = [
+            'question' => isset($qa[0]['question']) ? $qa[0]['question'] : '',
+            'answer' => isset($qa[0]['answer']) ? $qa[0]['answer'] : ''
+        ];
+    }
+    return $questions_answers;
 }

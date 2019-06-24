@@ -8,7 +8,7 @@ $answers = [];
 $data['questions'] = $response['questions'];
 $data['answers'] = $response['answers'];
 
-$searchText = '@';
+$searchText = '';
 if (isset($_GET['search_text'])) {
     $searchText = $_GET['search_text'];
 }
