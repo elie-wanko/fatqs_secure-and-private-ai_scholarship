@@ -10,7 +10,8 @@ We hope to make this repo useful not only for the students of "Secure and Privat
 
 ## Other Resources
 * For **Newbies,** you can find the Intro to Deep Learning with PyTorch course by Udacity [here](https://www.udacity.com/course/deep-learning-pytorch--ud188). Also, if you're buzy and overwhelmed, here is  a [collection of summary notes](https://docs.google.com/spreadsheets/d/1b7eD6dgWXgFuFpbWHImC5lovWLBfPR_zgaedBRA_21s/edit#gid=0) compiled by previous scholars in the PyTorch scholarship challenge.
-* [Frequently Asked Technical Questions(FATQs)](https://github.com/ishgirwan/faqs_pytorch_scholarship) 2018/19 PyTorch Scholarship challenge with Udacity .
+* [https://docs.google.com/document/d/1DlfQ6q0tBS6EgmTZsc2U7ve3b2A1uRPX9UvnTw8lrsk/edit?usp=sharing](Tech Help AMAs Transcripts)
+* [Frequently Asked Technical Questions(FATQs)](https://github.com/ishgirwan/faqs_pytorch_scholarship) 2018/19 PyTorch Scholarship challenge with Udacity.
 * [Deep Learning with Pytorch resource airtable](https://airtable.com/shrwVC7gPOuTJkxW0/tblUf4zxlIMLjwrbv?blocks=hide).
 * [Private and Secure AI resource airtable](https://airtable.com/shrnw72B7jTxkb6IB/tblmTxH5ToKfHAqkO/viw6ngRCOjK9dwc5C?blocks=hide), you can contribute by submitting you resource through this [link](https://airtable.com/shrohsUEV89f5zZge).
 
