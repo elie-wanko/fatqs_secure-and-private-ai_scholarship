@@ -18,11 +18,17 @@
             $('.answers--block').find("[data-index='" + index + "']").show();
         });
 
-        $('#search_text').on('keypress', function(e){
+        $( ":input[name='search_text']" ).on('keypress', function(e){
             if (e.keyCode == 13) {
-                console.log(e.keyCode)
+                $("#search__form").submit();
             }
         });
+        $(".icon__close").on('click', function(){
+            $( ":input[name='search_text']" ).val("");
+            $("#search__form").submit();
+        });
+        //For Images
+        $('.materialboxed').materialbox();
     });
 
 }(jQuery, window, document));

@@ -4,7 +4,7 @@ require __DIR__ . '/../google-api/client.php';
 
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
-error_reporting(E_ALL);
+error_reporting(E_ERROR);
 
 /**
  * @param $lessons
@@ -93,4 +93,35 @@ function getLessonDetail($spreadsheetId)
     $answerValues = $answersResponse->getValues();
 
     return ['questions' => $questions, 'answers' => $answerValues];
+}
+
+
+/**
+ * @param $data
+ * @param $searchText
+ * @return array
+ */
+function search($data, $searchText)
+{
+    $questions_answers = [];
+    foreach ($data["questions"] as $key => $d) {
+        if ($key == 0) continue;
+        $questions_answers[] = [
+            'question' => $d,
+            'answer' => isset($data["answers"][$key]) ? $data["answers"][$key] : '',
+        ];
+    }
+    $fuse = new \wataridori\SFS\SimpleFuzzySearch($questions_answers, ["question", "answer"]);
+    if ($searchText === '') {
+        return $questions_answers;
+    }
+    $response = $fuse->search($searchText);
+    $questions_answers = [];
+    foreach($response as $qa){
+        $questions_answers[] = [
+            'question' => isset($qa[0]['question']) ? $qa[0]['question'] : '',
+            'answer' => isset($qa[0]['answer']) ? $qa[0]['answer'] : ''
+        ];
+    }
+    return $questions_answers;
 }

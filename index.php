@@ -1,10 +1,6 @@
 <?php
 require __DIR__ . '/common/helper.php';
 
-$searchText = '@';
-if(isset($_GET['search_text'])){
-   $searchText = $_GET['search_text'];
-}
 $lessons = getAllLessons($searchText);
 ?>
 
@@ -22,17 +18,6 @@ $lessons = getAllLessons($searchText);
 
     <h1>Secure and Private AI</h1>
     <h2>FATQs in the Slack channel of Udacity's Secure and Private Scholarship Challenge 2019.</h2>
-    <div class="row banner__search">
-        <form action="<?php $_SERVER["PHP_SELF"] ?>"class="col offset-s3 s6">
-            <div class="row">
-                <div class="input-field col s12">
-                    <i class="material-icons prefix">search</i>
-                    <input type="text" id="search_text" name="search_text" class="materialize-textarea">
-                    <label for="search_text">Enter your search query</label>
-                </div>
-            </div>
-        </form>
-    </div>
     <a href="https://github.com/elie-wanko/fatqs_secure-and-private-ai_scholarship">View on GitHub</a>
 </section>
 <section class="main__content--block">
@@ -58,14 +43,14 @@ $lessons = getAllLessons($searchText);
         would find solutions to most of the common problems in a single repo.</p>
 
     <p>We hope to make this repo useful not only for the students of “Secure and Private AI Scholarship Challenge with
-        Facebook” but also for future students of <a href="https://www.udacity.com/course/secure-and-private-ai--ud185" target = "_blank">Secure 
+        Facebook” but also for future students of <a href="https://www.udacity.com/course/secure-and-private-ai--ud185" target = "_blank">Secure
         and Private AI course</a> by Facebook AI on Udacity.</p>
 
 
     <h2>Other Resources</h2>
     <ol>
         <li>
-            For <b>Newbies,</b> you can find an Intro to Deep Learning with PyTorch course by Udacity <a href="https://www.udacity.com/course/deep-learning-pytorch--ud188" 
+            For <b>Newbies,</b> you can find an Intro to Deep Learning with PyTorch course by Udacity <a href="https://www.udacity.com/course/deep-learning-pytorch--ud188"
             target = "_blank">here</a>.  If you're buzy and overwhelmed, here is a <a href="https://docs.google.com/spreadsheets/d/1b7eD6dgWXgFuFpbWHImC5lovWLBfPR_zgaedBRA_21s/edit#gid=0" target = "_blank">
             collection of summary notes</a> compiled by previous scholars in the PyTorch scholarship challenge.
         </li>
