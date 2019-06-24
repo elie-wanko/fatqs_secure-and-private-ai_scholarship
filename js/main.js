@@ -18,7 +18,7 @@
             $('.answers--block').find("[data-index='" + index + "']").show();
         });
 
-        $('#search_text').on('keypress', function(e){
+        $('#search').on('keypress', function(e){
             if (e.keyCode == 13) {
                 console.log(e.keyCode)
             }

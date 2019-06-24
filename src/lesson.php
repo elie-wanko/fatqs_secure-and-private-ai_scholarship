@@ -33,20 +33,14 @@ $title = $_GET['title'];
     <nav class="header__top theme--bg">
         <div class="nav-wrapper">
             <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-            <h4>
-                <?php
-                echo $title;
-                ?>
-            </h4>
-            <form action="<?php $_SERVER["PHP_SELF"] ?>">
-                <div class="row">
-                    <div class="input-field col s12">
-                        <i class="material-icons prefix active">search</i>
-                        <input type="text" id="search_text" name="search_text" value="<?php echo $searchText; ?>" class="materialize-textarea">
-                        <label for="search_text">Enter your search query</label>
-                        <input type="hidden" name="id" value="<?php echo $docID; ?>">
-                        <input type="hidden" name="title" value="<?php echo $title; ?>">
-                    </div>
+            <a href="#" class="brand-logo"><?php echo $title; ?></a>
+            <form action="<?php $_SERVER["PHP_SELF"] ?>" method="post" class="right">
+                <div class="input-field">
+                    <input id="search" type="search" name="search_text" value="<?php echo $searchText ?>">
+                    <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+                    <i class="material-icons">close</i>
+                    <input type="hidden" name="id" value="<?php echo $docID; ?>">
+                    <input type="hidden" name="title" value="<?php echo $title; ?>">
                 </div>
             </form>
             <?php
