@@ -7,6 +7,6 @@
     ],
     "require": {
         "google/apiclient": "^2.0",
-        "loilo/fuse": "^3.4"
+        "wataridori/simple-fuzzy-search": "^0.1.1"
     }
 }

@@ -98,6 +98,7 @@ function getLessonDetail($spreadsheetId)
     return ['questions' => $questions, 'answers' => $answerValues];
 }
 
+
 /**
  * @param $data
  * @param $searchText
@@ -107,16 +108,14 @@ function search($data, $searchText)
 {
     $questions_answers = [];
     foreach ($data["questions"] as $key => $d) {
+        if ($key == 0) continue;
         $questions_answers[] = [
             'question' => $d,
-            'answer' => isset($data["answers"][$key])?$data["answers"][$key]:'',
+            'answer' => isset($data["answers"][$key]) ? $data["answers"][$key] : '',
         ];
     }
-    $fuse = new \Fuse\Fuse($questions_answers, [
-        "keys" => ["question", "answer"],
-    ]);
-
-    if($searchText === ''){
+    $fuse = new \wataridori\SFS\SimpleFuzzySearch($questions_answers, ["question", "answer"]);
+    if ($searchText === '') {
         return $questions_answers;
     }
 

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "7b657c86e40f04a8d9f68fb7b63b5aa3",
+    "content-hash": "132019cabcce04e0c164a71175a947b8",
     "packages": [
         {
             "name": "firebase/php-jwt",
@@ -782,6 +782,39 @@
             ],
             "description": "A polyfill for getallheaders.",
             "time": "2016-02-11T07:05:27+00:00"
+        },
+        {
+            "name": "wataridori/simple-fuzzy-search",
+            "version": "0.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/wataridori/simple-fuzzy-search.git",
+                "reference": "cad84b3bfe1809aeafe2c3ce6811ec587af68080"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/wataridori/simple-fuzzy-search/zipball/cad84b3bfe1809aeafe2c3ce6811ec587af68080",
+                "reference": "cad84b3bfe1809aeafe2c3ce6811ec587af68080",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "wataridori\\SFS\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-3.0"
+            ],
+            "authors": [
+                {
+                    "name": "Tran Duc Thang",
+                    "email": "thangtd90@gmail.com"
+                }
+            ],
+            "description": "Simple Fuzzy Search for PHP",
+            "time": "2016-03-12T13:38:53+00:00"
         }
     ],
     "packages-dev": [],
