@@ -27,6 +27,8 @@
             $( ":input[name='search_text']" ).val("");
             $("#search__form").submit();
         });
+        //For Images
+        $('.materialboxed').materialbox();
     });
 
 }(jQuery, window, document));
