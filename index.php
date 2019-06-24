@@ -1,10 +1,6 @@
 <?php
 require __DIR__ . '/common/helper.php';
 
-$searchText = '@';
-if(isset($_GET['search_text'])){
-   $searchText = $_GET['search_text'];
-}
 $lessons = getAllLessons($searchText);
 ?>
 

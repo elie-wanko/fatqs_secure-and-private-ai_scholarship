@@ -1,7 +1,9 @@
 <?php
 require __DIR__ . '/../vendor/autoload.php';
 require __DIR__ . '/../google-api/client.php';
+
 require __DIR__ . '/../google-api/globalvars.php';
+
 
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
@@ -94,4 +96,29 @@ function getLessonDetail($spreadsheetId)
     $answerValues = $answersResponse->getValues();
 
     return ['questions' => $questions, 'answers' => $answerValues];
+}
+
+/**
+ * @param $data
+ * @param $searchText
+ * @return array
+ */
+function search($data, $searchText)
+{
+    $questions_answers = [];
+    foreach ($data["questions"] as $key => $d) {
+        $questions_answers[] = [
+            'question' => $d,
+            'answer' => isset($data["answers"][$key])?$data["answers"][$key]:'',
+        ];
+    }
+    $fuse = new \Fuse\Fuse($questions_answers, [
+        "keys" => ["question", "answer"],
+    ]);
+
+    if($searchText === ''){
+        return $questions_answers;
+    }
+
+    return $fuse->search($searchText);
 }

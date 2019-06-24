@@ -5,16 +5,17 @@ $spreadsheetId = $_GET['id'];
 $response = getLessonDetail($spreadsheetId);
 
 $answers = [];
-$questions = $response['questions'];
-$answerValues = $response['answers'];
-if (empty($answerValues)) {
-    print "No data found.\n";
-} else {
-    foreach ($answerValues as $row) {
-        $answers[$row[1]] = $row[2];
-    }
+$data['questions'] = $response['questions'];
+$data['answers'] = $response['answers'];
+
+$searchText = '@';
+if (isset($_GET['search_text'])) {
+    $searchText = $_GET['search_text'];
 }
 
+$searchResults = search($data, $searchText);
+$docID = $_GET['id'];
+$title = $_GET['title'];
 ?>
 
 <!DOCTYPE html>
@@ -34,9 +35,20 @@ if (empty($answerValues)) {
             <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
             <h4>
                 <?php
-                echo $_GET['title'];
+                echo $title;
                 ?>
             </h4>
+            <form action="<?php $_SERVER["PHP_SELF"] ?>">
+                <div class="row">
+                    <div class="input-field col s12">
+                        <i class="material-icons prefix active">search</i>
+                        <input type="text" id="search_text" name="search_text" class="materialize-textarea">
+                        <label for="search_text">Enter your search query</label>
+                        <input type="hidden" name="id" value="<?php echo $docID; ?>">
+                        <input type="hidden" name="title" value="<?php echo $title; ?>">
+                    </div>
+                </div>
+            </form>
             <?php
             require __DIR__ . '/sidenav.php';
             ?>
@@ -50,11 +62,9 @@ if (empty($answerValues)) {
                 <h5>Frequently Asked Technical Questions</h5>
                 <ul>
                     <?php
-                    unset($questions['Id']);
-                    foreach ($questions as $key => $question) {
-
+                    foreach ($searchResults as $key => $result) {
                         echo "<li>";
-                        echo '<a href="#" class="question" data-index="'. $key.'" >' . $question . '</a>';
+                        echo '<a href="#" class="question" data-index="' . $key . '" >' . $result['question'] . '</a>';
                         echo "</li>";
                     }
                     ?>
@@ -62,14 +72,17 @@ if (empty($answerValues)) {
             </div>
             <div class="col m8 s12 answers--block card">
                 <?php
-                foreach ($questions as $key => $question) {
-                    $answer = isset($answers[$key]) ? $answers[$key] : '';
-                ?>
+                foreach ($searchResults as $key => $result) {
+                    ?>
                     <div class="answers--content" data-index="<?php echo $key ?>">
-                        <p><b>Q.:  </b><strong class="question-title text-accent-1"><?php echo $question ?></strong></p>
+                        <p><b>Q.: </b>
+                            <strong class="question-title text-accent-1">
+                                <?php echo $result['question'] ?>
+                            </strong>
+                        </p>
                         <p>
-                            <strong><b>A.:  </b></strong>
-                            <span class="answer"><?php echo $answer ?></span>
+                            <strong><b>A.: </b></strong>
+                            <span class="answer"><?php echo $result['answer'][2]  ?></span>
                         </p>
                     </div>
                 <?php } ?>
