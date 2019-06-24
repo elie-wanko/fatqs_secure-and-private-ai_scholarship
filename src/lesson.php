@@ -42,7 +42,7 @@ $title = $_GET['title'];
                 <div class="row">
                     <div class="input-field col s12">
                         <i class="material-icons prefix active">search</i>
-                        <input type="text" id="search_text" name="search_text" class="materialize-textarea">
+                        <input type="text" id="search_text" name="search_text" value="<?php echo $searchText; ?>" class="materialize-textarea">
                         <label for="search_text">Enter your search query</label>
                         <input type="hidden" name="id" value="<?php echo $docID; ?>">
                         <input type="hidden" name="title" value="<?php echo $title; ?>">
@@ -59,7 +59,13 @@ $title = $_GET['title'];
     <div class="container-lg">
         <div class="row">
             <div class="col m4 s12 questions--block">
-                <h5>Frequently Asked Technical Questions</h5>
+                <?php
+                if(count($searchResults) > 0){
+                    echo "<h5>Frequently Asked Technical Questions</h5>";
+                }else{
+                    echo "No Questions Found";
+                }
+                ?>
                 <ul>
                     <?php
                     foreach ($searchResults as $key => $result) {
