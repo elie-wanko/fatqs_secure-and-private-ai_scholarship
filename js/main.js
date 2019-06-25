@@ -10,7 +10,7 @@
     $(function () {
         $('.sidenav').sidenav();
         $('.answers--content').hide();
-        $('.answers--block').find("[data-index='0']").show();
+        $('.answers--block').find("[data-index='1']").show();
 
         $('.question').on('click', function () {
             let index = $(this).data('index');
