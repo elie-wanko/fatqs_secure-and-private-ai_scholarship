@@ -54,10 +54,8 @@ $title = $_GET['title'];
         <div class="row">
             <div class="col m4 s12 questions--block">
                 <?php
-                if(count($searchResults) > 0){
-                    echo "<h5>Frequently Asked Technical Questions</h5>";
-                }else{
-                    echo "No Questions Found";
+                if(count($searchResults) == 0){
+                    echo "No Questions Found!";
                 }
                 ?>
                 <ul>
@@ -76,9 +74,9 @@ $title = $_GET['title'];
                     ?>
                     <div class="answers--content" data-index="<?php echo $key ?>">
                         <p><b>Q.: </b>
-                            <strong class="question-title text-accent-1">
+                            <strong><b class="question-title text-accent-1">
                                 <?php echo $result['question'] ?>
-                            </strong>
+                            </strong></b>
                         </p>
                         <p>
                             <strong><b>A.: </b></strong>
