@@ -1,6 +1,7 @@
 <?php
 require __DIR__ . '/../vendor/autoload.php';
 require __DIR__ . '/../google-api/client.php';
+require __DIR__ . '/../google-api/globalvars.php';
 
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
@@ -13,9 +14,11 @@ error_reporting(E_ERROR);
 function sort_lessons($lessons)
 {
     $sorted_lessons = [];
-    foreach ($lessons as $lesson) {
-        $pos = strrpos($lesson->name, ":");
-        $index = substr($lesson->name, $pos - 1, 1);
+    foreach ($lessons as $key => $lesson) {
+        $pos_space = strpos($lesson->name, " ");
+        $pos_colon = strpos($lesson->name, ":");
+        $index = substr($lesson->name, $pos_space, $pos_colon - $pos_space);
+        //echo $pos_space . "\t" .  $pos_colon . "\t". $index . "</br>";
         $sorted_lessons[$index] = [$lesson->id, $lesson->name];
     }
     ksort($sorted_lessons);
