@@ -54,6 +54,7 @@ $lessons = getAllLessons($searchText);
             target = "_blank">here</a>.  If you're buzy and overwhelmed, here is a <a href="https://docs.google.com/spreadsheets/d/1b7eD6dgWXgFuFpbWHImC5lovWLBfPR_zgaedBRA_21s/edit#gid=0" target = "_blank">
             collection of summary notes</a> compiled by previous scholars in the PyTorch scholarship challenge.
         </li>
+        <li><a href="https://docs.google.com/document/d/1RU9oNRkk-yCE3UfgnwOGw5E5d3xTSp533Bt7NdKIbbc/edit?usp=sharing" target = "_blank">#60daysofudacity FAQs</a>.
         <li><a href="https://docs.google.com/document/d/1DlfQ6q0tBS6EgmTZsc2U7ve3b2A1uRPX9UvnTw8lrsk/edit?usp=sharing" target = "_blank">Tech Help AMAs Transcripts</a>.
         <li><a href="https://github.com/ishgirwan/faqs_pytorch_scholarship" target = "_blank">FATQs 2018/19 PyTorch Scholarship
                 challenge</a>.
