@@ -13,7 +13,6 @@
             $('.lessons').empty();
             let lessons = JSON.parse(response);
             Object.entries(lessons).forEach(function(lesson){ 
-                console.log(lesson);
                 $('.lessons').append('<li><a href = "src/lesson.php?id=' + lesson[1][0] + '&title=' + lesson[1][1] + '" >' + lesson[1][1] + '</a></li>');
             }); 
         }});
