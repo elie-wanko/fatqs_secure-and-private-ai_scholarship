@@ -5,6 +5,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection"/>
     <link type="text/css" rel="stylesheet" href="css/style.css"/>
+    <link rel="manifest" href="/manifest.json">
 </head>
 
 <body>
@@ -15,10 +16,7 @@
     <a href="https://github.com/elie-wanko/fatqs_secure-and-private-ai_scholarship">View on GitHub</a>
 </section>
 <section class="main__content--block">
-
-
-    <h2>Content</h2>
-    
+    <h2>Content</h2>    
     <ul class="lessons">
         <div class="preloader-wrapper active">
             <div class="spinner-layer spinner-red-only">
@@ -29,8 +27,6 @@
         </div>
         Loading Lessons
     </ul>
-
-
     <h2>Why we created this repo?</h2>
     <p>All the channels of our Slack community are constantly buzzing with great questions and amazing answers.
         These answers can be in the form of lucid explanations from our peers or references to some awesome resources.
@@ -68,5 +64,25 @@
 <script type="text/javascript" src="js/jquery.js"></script>
 <script type="text/javascript" src="js/materialize.min.js"></script>
 <script type="text/javascript" src="js/main.js"></script>
+<script>
+    // This is the "Offline page" service worker
+    // Add this below content to your HTML page, or add the js file to your page at the very top to register service worker
+    // Check compatibility for the browser we're running this in
+    if ("serviceWorker" in navigator) {
+        if (navigator.serviceWorker.controller) {
+            console.log("[PWA Builder] active service worker found, no need to register");
+        } else {
+            // Register the service worker
+            navigator.serviceWorker
+            .register("sw.js", {
+                scope: "./"
+            })
+            .then(function (reg) {
+                console.log("[PWA Builder] Service worker has been registered for scope: " + reg.scope);
+            });
+        }
+    }
+
+</script>
 </body>
 </html>
